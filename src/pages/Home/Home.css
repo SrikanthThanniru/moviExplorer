@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .main-home {
+    overflow-y: auto;
+    
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+    font-size: 48px;
+    font-weight: bold;
+    background: linear-gradient(45deg, #f42905, #dffc04); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    padding: 20px;
+    font-size: calc(24px + 1vw); 
+  }
+  
+  .loading, .error {
+    text-align: center;
+    font-size: calc(14px + 0.5vw);
+    color: #f44336;
+  }
+  
+  form {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+  }
+  
+  @media (max-width: 600px) {
+    form {
+      flex-direction: column; 
+      width: 100%;
+      gap: 10px;
+      align-items: center;
+    }
+  
+    input, button {
+      width: 70%;
+      max-width: 300px;
+    }
+  }
+  
+  input {
+    padding: 10px;
+    width: 280px;
+    font-size: calc(14px + 0.5vw); 
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  button {
+    padding: 10px 15px;
+    margin-left: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: calc(14px + 0.3vw); 
+  }
+  
+  button:hover {
+    background-color: #ff6347;
+  }
+  

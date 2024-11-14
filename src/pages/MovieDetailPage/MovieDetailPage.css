@@ -1,0 +1,96 @@
+.movie-detail-container {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    background-color: #f7f7f7;
+    font-family: Arial, sans-serif;
+  }
+  
+  .movie-detail-container h1 {
+    text-align: center;
+    color: #333;
+    font-size: calc(24px + 1vw); 
+  }
+  
+  .movie-detail-container .overview {
+    font-size: calc(14px + 0.5vw); 
+    line-height: 1.6;
+    color: #555;
+  }
+  
+  .movie-detail-container .movie-details p {
+    font-size: calc(14px + 0.5vw); 
+    color: #333;
+  }
+  
+  .movie-detail-container .movie-info strong {
+    color: #333;
+    font-weight: bold;
+    font-size: calc(16px + 0.5vw); 
+  }
+  
+  .movie-detail-container .movie-poster {
+    max-width: 300px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    margin: auto;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .movie-detail-container .movie-poster:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .movie-detail-container .movie-poster img {
+    width: 100%;
+    max-height: 400px;
+    border-radius: 8px;
+  }
+  
+  .movie-detail-container .back-button {
+    display: inline-block;
+    margin-top: 10px;
+    background-color: #333;
+    color: white;
+    padding: 10px ;
+    max-width: 400px;
+    align-self: center;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    font-size: calc(14px + 0.5vw);
+    transition: background-color 0.3s ease;
+  }
+  
+  .movie-detail-container .back-button:hover {
+    background-color: #21d1e8;
+  }
+  
+  @media (max-width: 768px) {
+    .movie-detail-container h1 {
+      font-size: 24px;
+    }
+  
+    .movie-detail-container .overview,
+    .movie-detail-container .movie-details p {
+      font-size: 16px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .movie-detail-container h1 {
+      font-size: 20px;
+    }
+  
+    .movie-detail-container .overview,
+    .movie-detail-container .movie-details p {
+      font-size: 14px;
+    }
+  
+    .movie-detail-container .back-button {
+      font-size: 14px;
+      padding: 8px 16px;
+    }
+  }
+  
